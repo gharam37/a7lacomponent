@@ -1,0 +1,25 @@
+cd desktop
+git init
+git add section1.1.txt
+git add section3.1.txt
+git add section5.1.txt
+git rm --cached section3.1.txt
+git add section3.1.txt
+git commit -m “I added 3 text files to my repository, then I deleted a file and added it back again"
+
+git remote add origin https://github.com/mohamedgabribrahim/sprintgabr0.git
+git remote -v
+git push origin master
+
+git checkout -b ReadMe
+git push origin ReadMe
+
+git add README.md
+git commit -m “I added a ReadMe branch and a README txt file”
+git push origin master
+
+git push origin ReadMe:master
+
+git add AllMyCommands.txt
+git commit -m “I added a text file containing all the commands I wrote”
+git push origin master
